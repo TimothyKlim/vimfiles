@@ -38,7 +38,11 @@ if has("gui_macvim")
   imap <D-8> <Esc>8gt
   map  <D-9> 9gt
   imap <D-9> <Esc>9gt
-
-  " Set cursor blink off
-  set guicursor=a:blinkoff0
 end  
+
+" Set cursor blink off
+set guicursor=a:blinkoff0
+
+" Use my default window size
+set columns=150
+set lines=42
