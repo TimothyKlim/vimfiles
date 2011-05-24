@@ -38,6 +38,23 @@ if has("gui_macvim")
   imap <D-8> <Esc>8gt
   map  <D-9> 9gt
   imap <D-9> <Esc>9gt
+
+  " Background transparency
+  let g:bg_transparent_status = 0
+
+  function g:bg_transparent()
+    if g:bg_transparent_status == 0
+      let g:bg_transparent_status = 1
+      
+      set transparency=20
+    else
+      let g:bg_transparent_status = 0
+      
+      set transparency=0
+    endif
+  endfunction
+
+  map <F2> <esc>:call g:bg_transparent()<cr>
 end  
 
 " Set cursor blink off
@@ -46,3 +63,6 @@ set guicursor=a:blinkoff0
 " Use my default window size
 set columns=150
 set lines=42
+
+" Hide mouse cursor while typing
+set mousehide
