@@ -1,6 +1,3 @@
-" Detect filetypes
-filetype plugin indent on
-
 " ViImprove mode
 set nocompatible
 
@@ -9,6 +6,9 @@ syntax enable
 
 " Run pathogen for load all plugins
 call pathogen#runtime_append_all_bundles()
+
+" Detect filetypes
+filetype indent on
 
 " Show cursor position
 set ruler
