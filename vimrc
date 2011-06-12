@@ -58,6 +58,7 @@ else
   let g:solarized_termcolors=256
 end
 
+let g:solarized_hitrail = 1
 colorscheme solarized
 
 " Disable swaping files
