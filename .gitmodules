@@ -76,3 +76,6 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "bundle/task-org"]
+	path = bundle/task-org
+	url = git://github.com/iflo0/vim-task-org.git
